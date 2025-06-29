@@ -161,3 +161,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+const langFaBtn = document.getElementById('lang-fa');
+const langEnBtn = document.getElementById('lang-en');
+if (langFaBtn && langEnBtn) {
+  langFaBtn.addEventListener('click', () => setLanguage('fa'));
+  langEnBtn.addEventListener('click', () => setLanguage('en'));
+}
